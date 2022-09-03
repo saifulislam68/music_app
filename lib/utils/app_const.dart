@@ -7,6 +7,10 @@ class AppColor {
   static Color fromfillColor = const Color(0xff14294F);
 }
 
+class AppImage {
+  static String applogo = "assets/images/app_logo.png";
+}
+
 class AppText {
   static String onboardingText = 'Listen to the best music every day with us';
   static String getStarted = 'Get started now';

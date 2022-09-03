@@ -75,6 +75,7 @@ class SignUpScreen extends StatelessWidget {
                                   color: Colors.white.withOpacity(.4))),
                         ),
                       ),
+                      /////Email from//////
                       const SizedBox(
                         height: 20,
                       ),
@@ -83,7 +84,7 @@ class SignUpScreen extends StatelessWidget {
                           left: 16.0,
                         ),
                         child: Text(
-                          AppText.typeName,
+                          AppText.emailType,
                           textAlign: TextAlign.start,
                           style: GoogleFonts.manrope(color: Colors.white),
                         ),
@@ -102,7 +103,7 @@ class SignUpScreen extends StatelessWidget {
                               fillColor: AppColor.fromfillColor,
                               border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(10)),
-                              labelText: AppText.hintName,
+                              labelText: AppText.hintEmail,
                               labelStyle: GoogleFonts.manrope(
                                   color: Colors.white.withOpacity(.4))),
                         ),

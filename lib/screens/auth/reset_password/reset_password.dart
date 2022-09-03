@@ -1,3 +1,4 @@
+import 'package:dhak_dhol/screens/song_upload/song_upload_screen.dart';
 import 'package:dhak_dhol/utils/app_const.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -125,11 +126,12 @@ class ResetPassword extends StatelessWidget {
                         padding: const EdgeInsets.all(16.0),
                         child: InkWell(
                           onTap: () {
-                            // Navigator.push(
-                            //     context,
-                            //     MaterialPageRoute(
-                            //       builder: (context) => const SignUpScreen(),
-                            //     ));
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      const SongUploadScreen(),
+                                ));
                           },
                           child: Container(
                             height: 60,
