@@ -52,6 +52,72 @@ class DummyData {
       assetImage: 'assets/images/album_artist2.png',
     ),
   ];
+  final List<Music> artists = [
+    Music(
+      title: 'Live from paris ',
+      track: '16 Track',
+      assetImage: 'assets/images/artists_woman.png',
+    ),
+    Music(
+      title: 'Embarrassing',
+      track: '50 Track',
+      assetImage: 'assets/images/artists_man.png',
+    ),
+    Music(
+      title: 'Live from paris ',
+      track: '16 Track',
+      assetImage: 'assets/images/artists_woman.png',
+    ),
+    Music(
+      title: 'Embarrassing',
+      track: '50 Track',
+      assetImage: 'assets/images/artists_man.png',
+    ),
+  ];
+  final List<Music> moods = [
+    Music(
+      title: 'Dj Party ',
+      track: '16 Track',
+      assetImage: 'assets/images/artists_woman.png',
+    ),
+    Music(
+      title: 'Club Song',
+      track: '50 Track',
+      assetImage: 'assets/images/artists_man.png',
+    ),
+    Music(
+      title: 'Live from paris ',
+      track: '16 Track',
+      assetImage: 'assets/images/artists_woman.png',
+    ),
+    Music(
+      title: 'Embarrassing',
+      track: '50 Track',
+      assetImage: 'assets/images/artists_man.png',
+    ),
+  ];
+  final List<Music> popular = [
+    Music(
+      title: 'Consequences',
+      track: 'Enjoy a please',
+      assetImage: 'assets/images/popular1.png',
+    ),
+    Music(
+      title: 'Repella',
+      track: 'Epudiated',
+      assetImage: 'assets/images/popular2.png',
+    ),
+    Music(
+      title: 'Asperiores',
+      track: 'Track',
+      assetImage: 'assets/images/popular3.png',
+    ),
+    Music(
+      title: 'Embarrassing',
+      track: 'Track',
+      assetImage: 'assets/images/popular1.png',
+    ),
+  ];
   final List<Music> bookmark = [
     Music(
         title: 'Padma Bridge: US, India, Pakistan commend Bangladesh ...',

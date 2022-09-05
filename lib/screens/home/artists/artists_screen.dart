@@ -1,9 +1,9 @@
 import 'package:dhak_dhol/model/dummy_data.dart';
-import 'package:dhak_dhol/screens/home_pages/album_page.dart';
+import 'package:dhak_dhol/screens/home/artists/artists_page.dart';
 import 'package:flutter/material.dart';
 
-class AlbumScreen extends StatelessWidget {
-  const AlbumScreen({Key? key}) : super(key: key);
+class ArtistsScreen extends StatelessWidget {
+  const ArtistsScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class AlbumScreen extends StatelessWidget {
               const Padding(
                 padding: EdgeInsets.only(right: 8.0),
                 child: Text(
-                  'Album',
+                  'Artists',
                   style: TextStyle(color: Colors.white, fontSize: 24),
                 ),
               ),
@@ -41,17 +41,15 @@ class AlbumScreen extends StatelessWidget {
         ),
         SizedBox(
           height: 190,
-          child: Padding(
-              padding: const EdgeInsets.all(12.0),
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: DummyData().albumList.length,
-                itemBuilder: (context, index) {
-                  return AlbumPage(
-                    albumList: DummyData().albumList[index],
-                  );
-                },
-              )),
+          child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            itemCount: DummyData().artists.length,
+            itemBuilder: (context, index) {
+              return ArtistsPage(
+                artists: DummyData().artists[index],
+              );
+            },
+          ),
         ),
       ],
     );

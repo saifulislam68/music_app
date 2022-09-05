@@ -1,10 +1,11 @@
 import 'package:dhak_dhol/model/dummy_data.dart';
-import 'package:dhak_dhol/screens/home_pages/album/album_screen.dart';
-import 'package:dhak_dhol/screens/home_pages/album_page.dart';
-import 'package:dhak_dhol/screens/home_pages/artists/artists_page.dart';
-import 'package:dhak_dhol/screens/home_pages/exlpance_details.dart';
-import 'package:dhak_dhol/screens/home_pages/home_page_slider.dart';
-import 'package:dhak_dhol/screens/home_pages/song_category.dart';
+import 'package:dhak_dhol/screens/home/album/album_screen.dart';
+import 'package:dhak_dhol/screens/home/artists/artists_screen.dart';
+import 'package:dhak_dhol/screens/home/exlpance_details.dart';
+import 'package:dhak_dhol/screens/home/home_page_slider.dart';
+import 'package:dhak_dhol/screens/home/moods/moods_screen.dart';
+import 'package:dhak_dhol/screens/home/popular/popular_screen.dart';
+import 'package:dhak_dhol/screens/home/song_category.dart';
 import 'package:dhak_dhol/utils/app_const.dart';
 import 'package:flutter/material.dart';
 
@@ -100,46 +101,33 @@ class _HomeScreenState extends State<HomeScreen> {
               //         songCategory: DummyData().songCategory[index],
               //       );
               //     }),
-              Wrap(
-                children: List.generate(
-                    DummyData().songCategory.length,
-                    (index) => SongCategory(
-                          songCategory: DummyData().songCategory[index],
-                        )),
-              ),
-              const AlbumScreen(),
+              ////////song category/////////
               Padding(
-                padding: const EdgeInsets.only(left: 16.0, right: 16),
-                child: Row(
-                  children: [
-                    const Padding(
-                      padding: EdgeInsets.only(right: 8.0),
-                      child: Text(
-                        'Artists',
-                        style: TextStyle(color: Colors.white, fontSize: 24),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child:
-                          Image.asset('assets/images/headphone_handaler.png'),
-                    ),
-                    const Spacer(),
-                    const Padding(
-                      padding: EdgeInsets.only(right: 8.0),
-                      child: Text(
-                        'More',
-                        style: TextStyle(color: Colors.white),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 8.0),
-                      child: Image.asset('assets/images/forward.png'),
-                    )
-                  ],
+                padding: const EdgeInsets.all(16.0),
+                child: Wrap(
+                  children: List.generate(
+                      DummyData().songCategory.length,
+                      (index) => SongCategory(
+                            songCategory: DummyData().songCategory[index],
+                          )),
                 ),
               ),
-              ArtistsPage()
+              const SizedBox(
+                height: 10,
+              ),
+              const AlbumScreen(),
+              const SizedBox(
+                height: 10,
+              ),
+              const ArtistsScreen(),
+              const SizedBox(
+                height: 10,
+              ),
+              const MoodsScreen(),
+              const SizedBox(
+                height: 10,
+              ),
+              const PopularScreen()
             ],
           ),
         ),
