@@ -1,9 +1,9 @@
 import 'package:dhak_dhol/model/dummy_data.dart';
 import 'package:flutter/material.dart';
 
-class PopularContent extends StatelessWidget {
-  final Music? popular;
-  const PopularContent({Key? key, this.popular}) : super(key: key);
+class TracksContent extends StatelessWidget {
+  final Music? tracks;
+  const TracksContent({Key? key, this.tracks}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class PopularContent extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Image.asset(
-            popular?.assetImage ?? "",
+            tracks?.assetImage ?? "",
             height: 120,
             width: 120,
             fit: BoxFit.cover,
@@ -29,7 +29,7 @@ class PopularContent extends StatelessWidget {
                 child: Image.asset('assets/images/music_handaler.png'),
               ),
               Text(
-                popular?.track ?? '',
+                tracks?.track ?? '',
                 style: const TextStyle(color: Colors.white, fontSize: 11),
               ),
               const SizedBox(
@@ -44,7 +44,7 @@ class PopularContent extends StatelessWidget {
             height: 5,
           ),
           Text(
-            popular?.title ?? '',
+            tracks?.title ?? '',
             style: const TextStyle(
               fontSize: 13,
               color: Colors.white,

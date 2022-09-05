@@ -1,9 +1,9 @@
 import 'package:dhak_dhol/model/dummy_data.dart';
-import 'package:dhak_dhol/screens/home/popular/popular_content.dart';
+import 'package:dhak_dhol/screens/home/tracks/tracks_content.dart';
 import 'package:flutter/material.dart';
 
-class PopularScreen extends StatelessWidget {
-  const PopularScreen({Key? key}) : super(key: key);
+class TracksScreen extends StatelessWidget {
+  const TracksScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class PopularScreen extends StatelessWidget {
               const Padding(
                 padding: EdgeInsets.only(right: 8.0),
                 child: Text(
-                  'Popular',
+                  'Tracks',
                   style: TextStyle(color: Colors.white, fontSize: 24),
                 ),
               ),
@@ -24,18 +24,6 @@ class PopularScreen extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: Image.asset('assets/images/headphone_handaler.png'),
               ),
-              const Spacer(),
-              const Padding(
-                padding: EdgeInsets.only(right: 8.0),
-                child: Text(
-                  'More',
-                  style: TextStyle(color: Colors.white),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(left: 8.0),
-                child: Image.asset('assets/images/forward.png'),
-              )
             ],
           ),
         ),
@@ -43,10 +31,10 @@ class PopularScreen extends StatelessWidget {
           height: 195,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
-            itemCount: DummyData().popular.length,
+            itemCount: DummyData().tracks.length,
             itemBuilder: (context, index) {
-              return PopularContent(
-                popular: DummyData().popular[index],
+              return TracksContent(
+                tracks: DummyData().tracks[index],
               );
             },
           ),

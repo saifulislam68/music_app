@@ -6,6 +6,7 @@ import 'package:dhak_dhol/screens/home/home_page_slider.dart';
 import 'package:dhak_dhol/screens/home/moods/moods_screen.dart';
 import 'package:dhak_dhol/screens/home/popular/popular_screen.dart';
 import 'package:dhak_dhol/screens/home/song_category.dart';
+import 'package:dhak_dhol/screens/home/tracks/tracks_screen.dart';
 import 'package:dhak_dhol/utils/app_const.dart';
 import 'package:flutter/material.dart';
 
@@ -127,7 +128,9 @@ class _HomeScreenState extends State<HomeScreen> {
               const SizedBox(
                 height: 10,
               ),
-              const PopularScreen()
+              const PopularScreen(),
+
+              const TracksScreen(),
             ],
           ),
         ),

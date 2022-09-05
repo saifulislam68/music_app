@@ -118,6 +118,28 @@ class DummyData {
       assetImage: 'assets/images/popular1.png',
     ),
   ];
+  final List<Music> tracks = [
+    Music(
+      title: 'Will frequently',
+      track: 'Pleasure',
+      assetImage: 'assets/images/tracks1.png',
+    ),
+    Music(
+      title: 'When our powr',
+      track: 'Epudiated',
+      assetImage: 'assets/images/tracks2.png',
+    ),
+    Music(
+      title: 'Repudiated and',
+      track: 'Track',
+      assetImage: 'assets/images/tracks3.png',
+    ),
+    Music(
+      title: 'Embarrassing',
+      track: 'Track',
+      assetImage: 'assets/images/tracks1.png',
+    ),
+  ];
   final List<Music> bookmark = [
     Music(
         title: 'Padma Bridge: US, India, Pakistan commend Bangladesh ...',
