@@ -1,9 +1,9 @@
 import 'package:dhak_dhol/model/dummy_data.dart';
 import 'package:flutter/material.dart';
 
-class TracksContent extends StatelessWidget {
-  final Music? tracks;
-  const TracksContent({Key? key, this.tracks}) : super(key: key);
+class MyBookmarkContent extends StatelessWidget {
+  final Music? myBookmark;
+  const MyBookmarkContent({Key? key, this.myBookmark}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,9 +16,7 @@ class TracksContent extends StatelessWidget {
             elevation: 4,
             color: Colors.transparent,
             child: Image.asset(
-              tracks?.assetImage ?? "",
-              height: 120,
-              width: 120,
+              myBookmark?.assetImage ?? "",
               fit: BoxFit.cover,
             ),
           ),
@@ -33,7 +31,7 @@ class TracksContent extends StatelessWidget {
                 child: Image.asset('assets/images/music_handaler.png'),
               ),
               Text(
-                tracks?.track ?? '',
+                myBookmark?.track ?? '',
                 style: const TextStyle(color: Colors.white, fontSize: 11),
               ),
               const SizedBox(
@@ -48,7 +46,7 @@ class TracksContent extends StatelessWidget {
             height: 5,
           ),
           Text(
-            tracks?.title ?? '',
+            myBookmark?.title ?? '',
             style: const TextStyle(
               fontSize: 13,
               color: Colors.white,

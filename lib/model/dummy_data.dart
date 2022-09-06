@@ -10,6 +10,16 @@ class DummyData {
       author: 'Generate',
       assetImage: 'assets/images/man_singer.png',
     ),
+    Music(
+      title: 'Contrary to popular belief Lorem ringo ',
+      author: 'Will pau',
+      assetImage: 'assets/images/woman_singer.png',
+    ),
+    Music(
+      title: 'Sometimes by royer accident sometimes ',
+      author: 'Generate',
+      assetImage: 'assets/images/man_singer.png',
+    ),
   ];
 
   final List<Music> songCategory = [
@@ -140,50 +150,44 @@ class DummyData {
       assetImage: 'assets/images/tracks1.png',
     ),
   ];
-  final List<Music> bookmark = [
+  final List<Music> playlists = [
     Music(
-        title: 'Padma Bridge: US, India, Pakistan commend Bangladesh ...',
-        author: 'Crypto',
-        assetImage: 'assets/images/mondir.png',
-        subtitle: 'By Ryan Browne . 26 june 2022'),
+      track: 'Pleasures to',
+      assetImage: 'assets/images/playlists1.png',
+    ),
     Music(
-        title: 'Padma Bridge: US, India, Pakistan commend Bangladesh ...',
-        author: 'World',
-        assetImage: 'assets/images/img11.png',
-        subtitle: 'By Ryan Browne . 26 june 2022'),
+      track: 'Expendita distin',
+      assetImage: 'assets/images/playlists2.png',
+    ),
+    Music(
+      track: 'Welcome',
+      assetImage: 'assets/images/playlists3.png',
+    ),
+    Music(
+      track: 'Pleasures to',
+      assetImage: 'assets/images/playlists1.png',
+    ),
   ];
-  final List<Music> topics = [
+  final List<Music> myBookmark = [
     Music(
-      title: 'Science',
-      assetImage: 'assets/images/science.png',
+      title: 'Will frequently',
+      track: 'Pleasure',
+      assetImage: 'assets/images/bookmark1.png',
     ),
     Music(
-      title: 'Politics',
-      assetImage: 'assets/images/politics.png',
+      title: 'When our powr',
+      track: 'Epudiated',
+      assetImage: 'assets/images/bookmark2.png',
     ),
     Music(
-      title: 'Technology',
-      assetImage: 'assets/images/technology.png',
+      title: 'Repudiated and',
+      track: 'Track',
+      assetImage: 'assets/images/bookmark3.png',
     ),
     Music(
-      title: 'Fashion',
-      assetImage: 'assets/images/fashion.png',
-    ),
-    Music(
-      title: 'Art',
-      assetImage: 'assets/images/art.png',
-    ),
-    Music(
-      title: 'Sport',
-      assetImage: 'assets/images/sport.png',
-    ),
-    Music(
-      title: 'Science',
-      assetImage: 'assets/images/science.png',
-    ),
-    Music(
-      title: 'Politics',
-      assetImage: 'assets/images/politics.png',
+      title: 'Embarrassing',
+      track: 'Track',
+      assetImage: 'assets/images/bookmark3.png',
     ),
   ];
 }

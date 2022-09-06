@@ -1,3 +1,4 @@
+import 'package:dhak_dhol/screens/home/bottom_navigation_bar/bottom_navigation_bar.dart';
 import 'package:dhak_dhol/screens/home/home_screen.dart';
 import 'package:dhak_dhol/screens/song_upload/song_upload_screen.dart';
 import 'package:dhak_dhol/utils/app_const.dart';
@@ -123,7 +124,7 @@ class ResetPassword extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const HomeScreen(),
+                                builder: (context) => const BottomNavBar(),
                               ));
                         },
                         child: Container(

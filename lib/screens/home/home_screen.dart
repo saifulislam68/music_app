@@ -4,6 +4,8 @@ import 'package:dhak_dhol/screens/home/artists/artists_screen.dart';
 import 'package:dhak_dhol/screens/home/exlpance_details.dart';
 import 'package:dhak_dhol/screens/home/home_page_slider.dart';
 import 'package:dhak_dhol/screens/home/moods/moods_screen.dart';
+import 'package:dhak_dhol/screens/home/my_bookmark/my_bookmark_screen.dart';
+import 'package:dhak_dhol/screens/home/playlists/playlists.screen.dart';
 import 'package:dhak_dhol/screens/home/popular/popular_screen.dart';
 import 'package:dhak_dhol/screens/home/song_category.dart';
 import 'package:dhak_dhol/screens/home/tracks/tracks_screen.dart';
@@ -53,6 +55,9 @@ class _HomeScreenState extends State<HomeScreen> {
               radius: 21,
             ),
           ),
+          const SizedBox(
+            width: 16,
+          )
         ],
       ),
       body: SingleChildScrollView(
@@ -70,7 +75,7 @@ class _HomeScreenState extends State<HomeScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
-                height: 300,
+                height: 304,
                 width: double.infinity,
                 child: Padding(
                     padding: const EdgeInsets.all(12.0),
@@ -87,21 +92,6 @@ class _HomeScreenState extends State<HomeScreen> {
               const SizedBox(
                 height: 10,
               ),
-              // GridView.builder(
-              //     shrinkWrap: true,
-              //     physics: const NeverScrollableScrollPhysics(),
-              //     gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-              //       maxCrossAxisExtent: 100,
-              //       childAspectRatio: 3 / 2,
-              //       crossAxisSpacing: 5,
-              //       mainAxisSpacing: 5,
-              //     ),
-              //     itemCount: DummyData().songCategory.length,
-              //     itemBuilder: (BuildContext ctx, index) {
-              //       return SongCategory(
-              //         songCategory: DummyData().songCategory[index],
-              //       );
-              //     }),
               ////////song category/////////
               Padding(
                 padding: const EdgeInsets.all(16.0),
@@ -131,6 +121,8 @@ class _HomeScreenState extends State<HomeScreen> {
               const PopularScreen(),
 
               const TracksScreen(),
+              const PlaylistsScreen(),
+              const MyBookmarkScreen(),
             ],
           ),
         ),
