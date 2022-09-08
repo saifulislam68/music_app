@@ -1,10 +1,15 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class AppColor {
   static Color backgroundColor = const Color(0xff1A263E);
   static Color deepBlue = const Color(0xff000E29);
   static Color grey = const Color(0xff9FA4AF);
   static Color fromfillColor = const Color(0xff14294F);
+  static Color backgroundColor2 = const Color(0xff14294F);
+  static Color textColor = Colors.white.withOpacity(0.8);
+  static Color buttonColor = const Color(0xffFC625B);
+  static Color secondary = const Color(0xffFC625B);
 }
 
 class AppImage {

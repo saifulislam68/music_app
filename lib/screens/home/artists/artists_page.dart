@@ -13,8 +13,6 @@ class ArtistsPage extends StatelessWidget {
         children: [
           Image.asset(
             artists?.assetImage ?? "",
-            height: 180,
-            width: 170,
             fit: BoxFit.cover,
           ),
           Positioned(

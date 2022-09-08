@@ -209,7 +209,7 @@ class _SongUploadScreenState extends State<SongUploadScreen> {
             child: ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(
-                primary: Colors.deepOrangeAccent,
+                primary: AppColor.buttonColor,
                 onPrimary: Colors.white,
               ),
               child: Padding(

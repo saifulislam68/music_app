@@ -9,6 +9,7 @@ import 'package:dhak_dhol/screens/home/playlists/playlists.screen.dart';
 import 'package:dhak_dhol/screens/home/popular/popular_screen.dart';
 import 'package:dhak_dhol/screens/home/song_category.dart';
 import 'package:dhak_dhol/screens/home/tracks/tracks_screen.dart';
+import 'package:dhak_dhol/screens/search/search_screen.dart';
 import 'package:dhak_dhol/utils/app_const.dart';
 import 'package:flutter/material.dart';
 
@@ -43,7 +44,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const ExpanseDetails(),
+                      builder: (context) => const SearchScreen(),
                     ));
               },
               icon: const Icon(Icons.search)),

@@ -61,6 +61,36 @@ class DummyData {
       track: "20 track",
       assetImage: 'assets/images/album_artist2.png',
     ),
+    Music(
+      title: 'Accident ',
+      track: '16 Track',
+      assetImage: 'assets/images/album_artist1.png',
+    ),
+    Music(
+      title: 'Girl like me',
+      track: '50 Track',
+      assetImage: 'assets/images/album_artist3.png',
+    ),
+    Music(
+      title: 'Good and Evil ',
+      track: "20 track",
+      assetImage: 'assets/images/album_artist2.png',
+    ),
+    Music(
+      title: 'Accident ',
+      track: '16 Track',
+      assetImage: 'assets/images/album_artist1.png',
+    ),
+    Music(
+      title: 'Girl like me',
+      track: '50 Track',
+      assetImage: 'assets/images/album_artist3.png',
+    ),
+    Music(
+      title: 'Good and Evil ',
+      track: "20 track",
+      assetImage: 'assets/images/album_artist2.png',
+    ),
   ];
   final List<Music> artists = [
     Music(
@@ -69,9 +99,29 @@ class DummyData {
       assetImage: 'assets/images/artists_woman.png',
     ),
     Music(
+      title: 'Good and Evil ',
+      track: "20 track",
+      assetImage: 'assets/images/album_artist2.png',
+    ),
+    Music(
+      title: 'Good and Evil ',
+      track: "20 track",
+      assetImage: 'assets/images/album_artist1.png',
+    ),
+    Music(
       title: 'Embarrassing',
       track: '50 Track',
       assetImage: 'assets/images/artists_man.png',
+    ),
+    Music(
+      title: 'Good and Evil ',
+      track: "20 track",
+      assetImage: 'assets/images/album_artist3.png',
+    ),
+    Music(
+      title: 'Good and Evil ',
+      track: "20 track",
+      assetImage: 'assets/images/album_artist2.png',
     ),
     Music(
       title: 'Live from paris ',
@@ -82,6 +132,11 @@ class DummyData {
       title: 'Embarrassing',
       track: '50 Track',
       assetImage: 'assets/images/artists_man.png',
+    ),
+    Music(
+      title: 'Good and Evil ',
+      track: "20 track",
+      assetImage: 'assets/images/album_artist2.png',
     ),
   ];
   final List<Music> moods = [
@@ -190,6 +245,111 @@ class DummyData {
       assetImage: 'assets/images/bookmark3.png',
     ),
   ];
+  final List<Music> selectMusic = [
+    Music(
+      title: 'Hollywood music has',
+      time: "00:03:59",
+      author: 'Hampden-Sydney',
+      assetImage: 'assets/images/select_music1.png',
+    ),
+    Music(
+      title: 'look out for the latest',
+      time: "00:02:59",
+      author: 'Sebasten',
+      assetImage: 'assets/images/select_music2.png',
+    ),
+    Music(
+      title: 'Let me love you',
+      time: "00:05:59",
+      author: 'Pleasure',
+      assetImage: 'assets/images/select_music3.png',
+    ),
+    Music(
+      title: 'Chunks as necessary',
+      time: "00:03:59",
+      author: 'Pleasure',
+      assetImage: 'assets/images/select_music4.png',
+    ),
+    Music(
+      title: 'Will frequently',
+      time: "00:03:59",
+      author: 'Pleasure',
+      assetImage: 'assets/images/select_music5.png',
+    ),
+  ];
+  final List<Music> profile = [
+    Music(
+      title: 'Total view',
+      assetImage: 'assets/images/view_icon.png',
+    ),
+    Music(
+      title: 'Followers',
+      assetImage: 'assets/images/follow_icon.png',
+    ),
+    Music(
+      title: 'Total Song',
+      assetImage: 'assets/images/song_icon.png',
+    ),
+    Music(
+      title: 'Earnings',
+      assetImage: 'assets/images/earning_icon.png',
+    ),
+  ];
+  final List<Music> follower = [
+    Music(
+      author: 'H. Rackham',
+      assetImage: 'assets/images/select_music1.png',
+    ),
+    Music(
+      author: 'Reprehenderi',
+      assetImage: 'assets/images/select_music2.png',
+    ),
+    Music(
+      author: 'Consquuntur',
+      assetImage: 'assets/images/select_music3.png',
+    ),
+    Music(
+      author: 'Procure him',
+      assetImage: 'assets/images/select_music3.png',
+    ),
+  ];
+  final List<Music> totalView = [
+    Music(
+      title: 'Explain to you how',
+      text: '5k',
+      text1: "500",
+      text2: "80k",
+      assetImage: 'assets/images/view1.png',
+    ),
+    Music(
+      title: 'Letraset sheets contain',
+      text: '4k',
+      text1: "200",
+      text2: "10k",
+      assetImage: 'assets/images/view2.png',
+    ),
+    Music(
+      title: 'Who avoids a pain',
+      text: '7k',
+      text1: "700",
+      text2: "20k",
+      assetImage: 'assets/images/view3.png',
+    ),
+    Music(
+      title: 'Excepteur sint occaec',
+      text: '2k',
+      text1: "300",
+      text2: "80k",
+      assetImage: 'assets/images/view4.png',
+    ),
+    Music(
+      title: 'Explain to you how',
+      text: '5k',
+      text1: "500",
+      text2: "80k",
+      assetImage: 'assets/images/view5.png',
+    ),
+  ];
 }
 
 class Music {
@@ -199,11 +359,13 @@ class Music {
   String? text1;
   String? text;
   String? text2;
+  String? time;
   String? subtitle;
   String? track;
 
   Music(
       {this.text,
+      this.time,
       this.title,
       this.author,
       this.assetImage,

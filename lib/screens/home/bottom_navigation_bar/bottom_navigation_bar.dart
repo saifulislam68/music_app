@@ -1,5 +1,7 @@
 import 'package:dhak_dhol/screens/auth/reset_password/reset_password.dart';
+import 'package:dhak_dhol/screens/category/song_category/song_category_screen.dart';
 import 'package:dhak_dhol/screens/home/home_screen.dart';
+import 'package:dhak_dhol/screens/profile/profile_screen.dart';
 import 'package:dhak_dhol/utils/app_const.dart';
 import 'package:flutter/material.dart';
 
@@ -12,13 +14,11 @@ class BottomNavBar extends StatefulWidget {
 
 class _BottomNavBarState extends State<BottomNavBar> {
   int _selectedIndex = 0;
-  static const TextStyle optionStyle =
-      TextStyle(fontSize: 20, fontWeight: FontWeight.bold);
   static const List<Widget> _widgetOptions = <Widget>[
     HomeScreen(),
     ResetPassword(),
-    HomeScreen(),
-    HomeScreen()
+    ProfileScreen(),
+    SongCategoryScreen()
   ];
 
   void _onItemTapped(int index) {
@@ -39,7 +39,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
           boxShadow: <BoxShadow>[
             BoxShadow(
               color: Colors.white,
-              blurRadius: 15,
+              blurRadius: 5,
             ),
           ],
         ),

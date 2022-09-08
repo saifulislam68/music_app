@@ -1,17 +1,17 @@
 import 'package:dhak_dhol/model/dummy_data.dart';
 import 'package:flutter/material.dart';
 
-class SelectMusicContent extends StatelessWidget {
+class SearchContent extends StatelessWidget {
   final Music? selectMusic;
-  const SelectMusicContent({Key? key, this.selectMusic}) : super(key: key);
+  const SearchContent({Key? key, this.selectMusic}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Row(
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Column(
+        children: [
+          Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Image.asset(selectMusic?.assetImage ?? ''),
@@ -53,10 +53,6 @@ class SelectMusicContent extends StatelessWidget {
                         const SizedBox(
                           width: 50,
                         ),
-                        Text(
-                          selectMusic?.time ?? "",
-                          style: TextStyle(color: Colors.white.withOpacity(.8)),
-                        ),
                       ],
                     ),
                   )
@@ -69,8 +65,8 @@ class SelectMusicContent extends StatelessWidget {
               )
             ],
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

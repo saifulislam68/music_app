@@ -1,4 +1,4 @@
-import 'package:dhak_dhol/screens/select_music_list/select_music_content.dart';
+import 'package:dhak_dhol/screens/select_music_list/select_music_screen.dart';
 import 'package:dhak_dhol/utils/app_const.dart';
 import 'package:flutter/material.dart';
 
@@ -179,7 +179,7 @@ class _MusicPlayerPageState extends State<MusicPlayerPage> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const SelectMusicContent(),
+                          builder: (context) => const SelectMusicScreen(),
                         ));
                   },
                   child: Image.asset('assets/images/mark_category_icon.png')),

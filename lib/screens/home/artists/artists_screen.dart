@@ -1,4 +1,5 @@
 import 'package:dhak_dhol/model/dummy_data.dart';
+import 'package:dhak_dhol/screens/home/artists/artists_details/artists_details_screen.dart';
 import 'package:dhak_dhol/screens/home/artists/artists_page.dart';
 import 'package:flutter/material.dart';
 
@@ -25,16 +26,29 @@ class ArtistsScreen extends StatelessWidget {
                 child: Image.asset('assets/images/headphone_handaler.png'),
               ),
               const Spacer(),
-              const Padding(
-                padding: EdgeInsets.only(right: 8.0),
-                child: Text(
-                  'More',
-                  style: TextStyle(color: Colors.white),
+              InkWell(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const ArtistsDetailsScreen(),
+                      ));
+                },
+                child: Row(
+                  children: [
+                    const Padding(
+                      padding: EdgeInsets.only(right: 8.0),
+                      child: Text(
+                        'More',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 8.0),
+                      child: Image.asset('assets/images/forward.png'),
+                    ),
+                  ],
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(left: 8.0),
-                child: Image.asset('assets/images/forward.png'),
               )
             ],
           ),
