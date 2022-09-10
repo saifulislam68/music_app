@@ -19,7 +19,7 @@ class ResetPassword extends StatelessWidget {
         child: Column(
           children: [
             const SizedBox(
-              height: 50,
+              height: 30,
             ),
             Center(
               child: Image.asset('assets/images/forget_img.png'),
@@ -30,14 +30,16 @@ class ResetPassword extends StatelessWidget {
             Text(
               AppText.reset,
               style: GoogleFonts.manrope(
-                  color: Colors.red, fontSize: 28, fontWeight: FontWeight.w500),
+                  color: AppColor.secondary,
+                  fontSize: 28,
+                  fontWeight: FontWeight.w600),
             ),
             const SizedBox(
               height: 30,
             ),
             Center(
               child: Container(
-                height: 400,
+                height: 422,
                 width: double.infinity,
                 decoration: BoxDecoration(
                   color: AppColor.deepBlue,
@@ -78,7 +80,7 @@ class ResetPassword extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(10)),
                             labelText: AppText.hintNewPassword,
                             labelStyle: GoogleFonts.manrope(
-                                color: Colors.white.withOpacity(.4))),
+                                color: Colors.white.withOpacity(.2))),
                       ),
                     ),
                     const SizedBox(
@@ -110,7 +112,7 @@ class ResetPassword extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(10)),
                             labelText: AppText.hintConfirmPassword,
                             labelStyle: GoogleFonts.manrope(
-                                color: Colors.white.withOpacity(.4))),
+                                color: Colors.white.withOpacity(.2))),
                       ),
                     ),
                     const SizedBox(
@@ -143,7 +145,9 @@ class ResetPassword extends StatelessWidget {
                           child: Center(
                             child: Text(AppText.submit,
                                 style: GoogleFonts.manrope(
-                                    color: Colors.white, fontSize: 16)),
+                                    fontWeight: FontWeight.w700,
+                                    color: Colors.white,
+                                    fontSize: 16)),
                           ),
                         ),
                       ),

@@ -22,7 +22,7 @@ class HomePageSlider extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(
-              height: 260,
+              height: 265,
               width: 164,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -65,11 +65,22 @@ class HomePageSlider extends StatelessWidget {
                   ),
                   Text(
                     homePageSlider?.title ?? '',
-                    style: TextStyle(color: Colors.white, fontSize: 15),
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 8,
                   ),
                   Text(
                     homePageSlider?.author ?? '',
-                    style: TextStyle(color: AppColor.grey, fontSize: 12),
+                    style: TextStyle(
+                      color: AppColor.grey,
+                      fontSize: 12,
+                      fontWeight: FontWeight.w600,
+                    ),
                   ),
                 ],
               ),

@@ -45,12 +45,13 @@ class OnboardingScreen extends StatelessWidget {
                       const SizedBox(
                         height: 50,
                       ),
-                      Text(
-                        AppText.onboardingText,
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: AppColor.grey,
-                          fontSize: 30,
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                        child: Text(
+                          AppText.onboardingText,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              color: AppColor.grey, fontSize: 24, height: 1.2),
                         ),
                       ),
                       const SizedBox(
@@ -83,7 +84,9 @@ class OnboardingScreen extends StatelessWidget {
                             child: Center(
                               child: Text(AppText.getStarted,
                                   style: GoogleFonts.manrope(
-                                      color: Colors.white, fontSize: 16)),
+                                      fontWeight: FontWeight.w600,
+                                      color: Colors.white,
+                                      fontSize: 20)),
                             ),
                           ),
                         ),
@@ -91,10 +94,23 @@ class OnboardingScreen extends StatelessWidget {
                       const SizedBox(
                         height: 20,
                       ),
-                      Text(
-                        AppText.accountText,
-                        style: GoogleFonts.manrope(
-                            color: Colors.white, fontSize: 15),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            AppText.accountText,
+                            style: GoogleFonts.manrope(
+                                color: Colors.white, fontSize: 16),
+                          ),
+                          SizedBox(
+                            width: 3,
+                          ),
+                          Text(
+                            'SignUp',
+                            style: GoogleFonts.manrope(
+                                color: AppColor.secondary, fontSize: 16),
+                          ),
+                        ],
                       )
                     ],
                   ),

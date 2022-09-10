@@ -29,10 +29,14 @@ class AlbumPage extends StatelessWidget {
                 ),
                 Text(
                   albumList?.title ?? '',
-                  style: TextStyle(color: Colors.white, fontSize: 15),
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w800,
+                  ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(left: 15.0),
+                  padding: const EdgeInsets.only(left: 15.0, top: 5),
                   child: Row(
                     children: [
                       Padding(
@@ -41,7 +45,10 @@ class AlbumPage extends StatelessWidget {
                       ),
                       Text(
                         albumList?.track ?? '',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600,
+                        ),
                       )
                     ],
                   ),

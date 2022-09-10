@@ -16,10 +16,12 @@ class ArtistsScreen extends StatelessWidget {
             children: [
               const Padding(
                 padding: EdgeInsets.only(right: 8.0),
-                child: Text(
-                  'Artists',
-                  style: TextStyle(color: Colors.white, fontSize: 24),
-                ),
+                child: Text('Artists',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 24,
+                      fontWeight: FontWeight.w700,
+                    )),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
@@ -40,7 +42,10 @@ class ArtistsScreen extends StatelessWidget {
                       padding: EdgeInsets.only(right: 8.0),
                       child: Text(
                         'More',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w600,
+                            fontSize: 16),
                       ),
                     ),
                     Padding(

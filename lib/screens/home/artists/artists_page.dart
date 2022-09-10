@@ -41,9 +41,9 @@ class ArtistsPage extends StatelessWidget {
                   Text(
                     artists?.title ?? '',
                     style: const TextStyle(
-                        fontSize: 14,
+                        fontSize: 16,
                         color: Colors.white,
-                        fontWeight: FontWeight.w600),
+                        fontWeight: FontWeight.w800),
                   ),
                   const SizedBox(
                     height: 5,
@@ -57,7 +57,10 @@ class ArtistsPage extends StatelessWidget {
                       ),
                       Text(
                         artists?.track ?? '',
-                        style: const TextStyle(color: Colors.white),
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600,
+                        ),
                       )
                     ],
                   ),

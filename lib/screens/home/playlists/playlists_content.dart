@@ -64,7 +64,11 @@ class PlaylistsContent extends StatelessWidget {
               ),
               Text(
                 playlists?.track ?? '',
-                style: const TextStyle(color: Colors.white, fontSize: 11),
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 11,
+                  fontWeight: FontWeight.w700,
+                ),
               ),
             ],
           ),

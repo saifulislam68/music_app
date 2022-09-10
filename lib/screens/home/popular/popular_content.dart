@@ -30,7 +30,11 @@ class PopularContent extends StatelessWidget {
               ),
               Text(
                 popular?.track ?? '',
-                style: const TextStyle(color: Colors.white, fontSize: 11),
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 11,
+                  fontWeight: FontWeight.w700,
+                ),
               ),
               const SizedBox(
                 width: 15,
@@ -46,7 +50,8 @@ class PopularContent extends StatelessWidget {
           Text(
             popular?.title ?? '',
             style: const TextStyle(
-              fontSize: 13,
+              fontWeight: FontWeight.w600,
+              fontSize: 12,
               color: Colors.white,
             ),
           ),

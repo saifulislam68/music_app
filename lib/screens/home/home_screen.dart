@@ -1,6 +1,7 @@
 import 'package:dhak_dhol/model/dummy_data.dart';
 import 'package:dhak_dhol/screens/home/album/album_screen.dart';
 import 'package:dhak_dhol/screens/home/artists/artists_screen.dart';
+import 'package:dhak_dhol/screens/home/drawer.dart';
 import 'package:dhak_dhol/screens/home/exlpance_details.dart';
 import 'package:dhak_dhol/screens/home/home_page_slider.dart';
 import 'package:dhak_dhol/screens/home/moods/moods_screen.dart';
@@ -26,7 +27,6 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: AppColor.backgroundColor,
       appBar: AppBar(
-        leading: IconButton(onPressed: () {}, icon: const Icon(Icons.menu)),
         elevation: 0,
         backgroundColor: AppColor.backgroundColor,
         title: Image.asset(
@@ -61,6 +61,7 @@ class _HomeScreenState extends State<HomeScreen> {
           )
         ],
       ),
+      drawer: AppDrawer(),
       body: SingleChildScrollView(
         child: Container(
           margin: const EdgeInsets.only(top: 5),
@@ -76,7 +77,7 @@ class _HomeScreenState extends State<HomeScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
-                height: 304,
+                height: 310,
                 width: double.infinity,
                 child: Padding(
                     padding: const EdgeInsets.all(12.0),
@@ -95,7 +96,8 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               ////////song category/////////
               Padding(
-                padding: const EdgeInsets.all(16.0),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 16.0, vertical: 0),
                 child: Wrap(
                   children: List.generate(
                       DummyData().songCategory.length,

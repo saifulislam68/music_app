@@ -18,7 +18,10 @@ class AlbumScreen extends StatelessWidget {
                 padding: EdgeInsets.only(right: 8.0),
                 child: Text(
                   'Album',
-                  style: TextStyle(color: Colors.white, fontSize: 24),
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 24,
+                      fontWeight: FontWeight.w700),
                 ),
               ),
               Padding(
@@ -40,7 +43,10 @@ class AlbumScreen extends StatelessWidget {
                       padding: EdgeInsets.only(right: 8.0),
                       child: Text(
                         'More',
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 16,
+                            fontWeight: FontWeight.w600),
                       ),
                     ),
                     Padding(

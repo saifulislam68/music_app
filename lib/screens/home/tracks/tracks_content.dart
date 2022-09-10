@@ -34,7 +34,11 @@ class TracksContent extends StatelessWidget {
               ),
               Text(
                 tracks?.track ?? '',
-                style: const TextStyle(color: Colors.white, fontSize: 11),
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 11,
+                  fontWeight: FontWeight.w700,
+                ),
               ),
               const SizedBox(
                 width: 20,
@@ -50,8 +54,9 @@ class TracksContent extends StatelessWidget {
           Text(
             tracks?.title ?? '',
             style: const TextStyle(
-              fontSize: 13,
+              fontSize: 12,
               color: Colors.white,
+              fontWeight: FontWeight.w600,
             ),
           ),
         ],

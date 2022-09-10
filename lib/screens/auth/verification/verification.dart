@@ -18,18 +18,20 @@ class VerificationScreen extends StatelessWidget {
         child: Column(
           children: [
             const SizedBox(
-              height: 30,
+              height: 20,
             ),
             Center(
               child: Image.asset('assets/images/forget_img.png'),
             ),
             const SizedBox(
-              height: 40,
+              height: 30,
             ),
             Text(
               AppText.verification,
               style: GoogleFonts.manrope(
-                  color: Colors.red, fontSize: 28, fontWeight: FontWeight.w500),
+                  color: AppColor.secondary,
+                  fontSize: 28,
+                  fontWeight: FontWeight.w700),
             ),
             const SizedBox(
               height: 10,
@@ -91,7 +93,7 @@ class VerificationScreen extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(10)),
                             labelText: AppText.hintCode,
                             labelStyle: GoogleFonts.manrope(
-                                color: Colors.white.withOpacity(.4))),
+                                color: Colors.white.withOpacity(.2))),
                       ),
                     ),
                     const SizedBox(
@@ -124,7 +126,9 @@ class VerificationScreen extends StatelessWidget {
                           child: Center(
                             child: Text(AppText.verifyCode,
                                 style: GoogleFonts.manrope(
-                                    color: Colors.white, fontSize: 16)),
+                                    fontWeight: FontWeight.w700,
+                                    color: Colors.white,
+                                    fontSize: 16)),
                           ),
                         ),
                       ),

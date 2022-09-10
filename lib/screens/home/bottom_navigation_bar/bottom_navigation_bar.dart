@@ -35,35 +35,50 @@ class _BottomNavBarState extends State<BottomNavBar> {
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: Container(
-        decoration: const BoxDecoration(
-          boxShadow: <BoxShadow>[
+        decoration: BoxDecoration(
+          boxShadow: [
             BoxShadow(
-              color: Colors.white,
-              blurRadius: 5,
+              color: Colors.grey.withOpacity(0.3),
+              spreadRadius: 5,
+              blurRadius: 7,
+              offset: const Offset(1, 1),
             ),
           ],
+          color: Colors.white,
+          borderRadius: BorderRadius.only(
+              topRight: Radius.circular(30), topLeft: Radius.circular(30)),
         ),
         child: BottomNavigationBar(
+          elevation: 4,
           backgroundColor: AppColor.deepBlue,
           type: BottomNavigationBarType.fixed,
+          selectedIconTheme: IconThemeData(color: AppColor.secondary),
+          selectedItemColor: Colors.white,
           showUnselectedLabels: true,
           unselectedItemColor: Colors.grey,
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-              icon: Icon(Icons.home, color: Color(0xff717171)),
+              icon: Icon(
+                Icons.home,
+              ),
               label: 'Home',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.sentiment_satisfied_alt_outlined,
-                  color: Color(0xff717171)),
+              icon: Icon(
+                Icons.sentiment_satisfied_alt_outlined,
+              ),
               label: 'For You',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.face, color: Color(0xff717171)),
+              icon: Icon(
+                Icons.face,
+              ),
               label: 'profile',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.category_outlined, color: Color(0xff717171)),
+              icon: Icon(
+                Icons.category_outlined,
+              ),
               label: 'Categories',
             ),
           ],

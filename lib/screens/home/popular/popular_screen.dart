@@ -17,7 +17,11 @@ class PopularScreen extends StatelessWidget {
                 padding: EdgeInsets.only(right: 8.0),
                 child: Text(
                   'Popular',
-                  style: TextStyle(color: Colors.white, fontSize: 24),
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                    fontWeight: FontWeight.w700,
+                  ),
                 ),
               ),
               Padding(
@@ -29,7 +33,10 @@ class PopularScreen extends StatelessWidget {
                 padding: EdgeInsets.only(right: 8.0),
                 child: Text(
                   'More',
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w600,
+                      fontSize: 16),
                 ),
               ),
               Padding(

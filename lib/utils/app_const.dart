@@ -19,7 +19,7 @@ class AppImage {
 class AppText {
   static String onboardingText = 'Listen to the best music every day with us';
   static String getStarted = 'Get started now';
-  static String accountText = 'Dont have an account? Signup';
+  static String accountText = 'Dont have an account?';
   static String signin = 'Sign in';
   static String signUp = 'Sign up';
   static String typeName = 'Type your name';

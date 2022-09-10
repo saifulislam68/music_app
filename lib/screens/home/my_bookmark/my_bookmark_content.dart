@@ -32,7 +32,11 @@ class MyBookmarkContent extends StatelessWidget {
               ),
               Text(
                 myBookmark?.track ?? '',
-                style: const TextStyle(color: Colors.white, fontSize: 11),
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 11,
+                  fontWeight: FontWeight.w700,
+                ),
               ),
               const SizedBox(
                 width: 20,
@@ -48,8 +52,9 @@ class MyBookmarkContent extends StatelessWidget {
           Text(
             myBookmark?.title ?? '',
             style: const TextStyle(
-              fontSize: 13,
+              fontSize: 12,
               color: Colors.white,
+              fontWeight: FontWeight.w700,
             ),
           ),
         ],

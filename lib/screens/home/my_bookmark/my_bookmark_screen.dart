@@ -16,8 +16,12 @@ class MyBookmarkScreen extends StatelessWidget {
               const Padding(
                 padding: EdgeInsets.only(right: 8.0),
                 child: Text(
-                  'Playlists',
-                  style: TextStyle(color: Colors.white, fontSize: 24),
+                  'My bookmark',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                    fontWeight: FontWeight.w700,
+                  ),
                 ),
               ),
               Padding(

@@ -17,7 +17,11 @@ class MoodsScreen extends StatelessWidget {
                 padding: EdgeInsets.only(right: 8.0),
                 child: Text(
                   'Moods',
-                  style: TextStyle(color: Colors.white, fontSize: 24),
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                    fontWeight: FontWeight.w700,
+                  ),
                 ),
               ),
               Padding(
@@ -29,7 +33,11 @@ class MoodsScreen extends StatelessWidget {
                 padding: EdgeInsets.only(right: 8.0),
                 child: Text(
                   'More',
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                  ),
                 ),
               ),
               Padding(

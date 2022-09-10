@@ -17,7 +17,11 @@ class TracksScreen extends StatelessWidget {
                 padding: EdgeInsets.only(right: 8.0),
                 child: Text(
                   'Tracks',
-                  style: TextStyle(color: Colors.white, fontSize: 24),
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                    fontWeight: FontWeight.w700,
+                  ),
                 ),
               ),
               Padding(

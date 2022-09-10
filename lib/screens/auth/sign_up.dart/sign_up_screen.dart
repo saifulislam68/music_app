@@ -67,7 +67,7 @@ class SignUpScreen extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(10)),
                             labelText: AppText.hintName,
                             labelStyle: GoogleFonts.manrope(
-                                color: Colors.white.withOpacity(.4))),
+                                color: Colors.white.withOpacity(.2))),
                       ),
                     ),
                     /////Email from//////
@@ -100,7 +100,7 @@ class SignUpScreen extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(10)),
                             labelText: AppText.hintEmail,
                             labelStyle: GoogleFonts.manrope(
-                                color: Colors.white.withOpacity(.4))),
+                                color: Colors.white.withOpacity(.2))),
                       ),
                     ),
                     const SizedBox(
@@ -134,7 +134,7 @@ class SignUpScreen extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(10)),
                             labelText: AppText.hintPassword,
                             labelStyle: GoogleFonts.manrope(
-                                color: Colors.white.withOpacity(.4))),
+                                color: Colors.white.withOpacity(.2))),
                       ),
                     ),
                     const SizedBox(
@@ -167,20 +167,33 @@ class SignUpScreen extends StatelessWidget {
                           child: Center(
                             child: Text(AppText.signUp,
                                 style: GoogleFonts.manrope(
-                                    color: Colors.white, fontSize: 16)),
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.white,
+                                    fontSize: 16)),
                           ),
                         ),
                       ),
                     ),
                     const SizedBox(
-                      height: 10,
+                      height: 5,
                     ),
-                    Center(
-                      child: Text(
-                        AppText.accountText,
-                        style: GoogleFonts.manrope(
-                            color: Colors.white, fontSize: 15),
-                      ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          'Already have an account',
+                          style: GoogleFonts.manrope(
+                              color: Colors.white, fontSize: 16),
+                        ),
+                        SizedBox(
+                          width: 4,
+                        ),
+                        Text(
+                          'Sign in',
+                          style: GoogleFonts.manrope(
+                              color: AppColor.secondary, fontSize: 16),
+                        ),
+                      ],
                     )
                   ],
                 ),
