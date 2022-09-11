@@ -3,8 +3,8 @@ import 'package:dhak_dhol/screens/home/artists/artists_song_details/artists_song
 import 'package:flutter/material.dart';
 
 class ArtistsDetailsPage extends StatelessWidget {
-  final Music? artists;
-  const ArtistsDetailsPage({Key? key, this.artists}) : super(key: key);
+  final Music? artists1;
+  const ArtistsDetailsPage({Key? key, this.artists1}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class ArtistsDetailsPage extends StatelessWidget {
         child: Stack(
           children: [
             Image.asset(
-              artists?.assetImage ?? "",
+              artists1?.assetImage ?? "",
               width: 200,
               fit: BoxFit.cover,
             ),
@@ -49,7 +49,7 @@ class ArtistsDetailsPage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      artists?.title ?? '',
+                      artists1?.title ?? '',
                       style: const TextStyle(
                           fontSize: 14,
                           color: Colors.white,
@@ -67,7 +67,7 @@ class ArtistsDetailsPage extends StatelessWidget {
                               Image.asset('assets/images/music_handaler.png'),
                         ),
                         Text(
-                          artists?.track ?? '',
+                          artists1?.track ?? '',
                           style: const TextStyle(color: Colors.white),
                         )
                       ],

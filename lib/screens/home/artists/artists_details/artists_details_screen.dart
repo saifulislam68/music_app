@@ -1,6 +1,5 @@
 import 'package:dhak_dhol/model/dummy_data.dart';
 import 'package:dhak_dhol/screens/home/artists/artists_details/artists_details_page.dart';
-import 'package:dhak_dhol/screens/home/artists/artists_page.dart';
 import 'package:dhak_dhol/utils/app_const.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +13,12 @@ class ArtistsDetailsScreen extends StatelessWidget {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: AppColor.deepBlue,
-        title: Text('Artists'),
+        title: const Text('Artists',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 24,
+              fontWeight: FontWeight.w700,
+            )),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -28,10 +32,10 @@ class ArtistsDetailsScreen extends StatelessWidget {
                     crossAxisSpacing: 3 / 2,
                     mainAxisSpacing: 10,
                   ),
-                  itemCount: DummyData().artists.length,
+                  itemCount: DummyData().artists1.length,
                   itemBuilder: (BuildContext ctx, index) {
                     return ArtistsDetailsPage(
-                      artists: DummyData().artists[index],
+                      artists1: DummyData().artists1[index],
                     );
                   }),
             ),

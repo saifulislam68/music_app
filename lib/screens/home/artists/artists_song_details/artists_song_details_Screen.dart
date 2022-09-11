@@ -27,7 +27,12 @@ class _ArtistsSongDetailsScreenState extends State<ArtistsSongDetailsScreen>
       appBar: AppBar(
         elevation: 0,
         backgroundColor: AppColor.deepBlue,
-        title: Text('Artists'),
+        title: Text('Artists',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 24,
+              fontWeight: FontWeight.w600,
+            )),
       ),
       body: SingleChildScrollView(
         child: Column(

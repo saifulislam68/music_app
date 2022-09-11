@@ -4,9 +4,16 @@ import 'package:dhak_dhol/utils/app_const.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class ResetPassword extends StatelessWidget {
+class ResetPassword extends StatefulWidget {
   const ResetPassword({Key? key}) : super(key: key);
 
+  @override
+  State<ResetPassword> createState() => _ResetPasswordState();
+}
+
+class _ResetPasswordState extends State<ResetPassword> {
+  bool _isObscure = true;
+  bool _isObscure1 = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,7 +29,11 @@ class ResetPassword extends StatelessWidget {
               height: 30,
             ),
             Center(
-              child: Image.asset('assets/images/forget_img.png'),
+              child: Image.asset(
+                'assets/images/forget_img.png',
+                height: 168,
+                width: 139,
+              ),
             ),
             const SizedBox(
               height: 20,
@@ -70,17 +81,18 @@ class ResetPassword extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(left: 16.0, right: 16),
                       child: TextField(
-                        textAlign: TextAlign.center,
-                        obscureText: true,
+                        style: TextStyle(color: Colors.white),
+                        obscureText: _isObscure,
                         decoration: InputDecoration(
-                            contentPadding: EdgeInsets.fromLTRB(20, 40, 0, 0),
-                            filled: true,
-                            fillColor: AppColor.fromfillColor,
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10)),
-                            labelText: AppText.hintNewPassword,
-                            labelStyle: GoogleFonts.manrope(
-                                color: Colors.white.withOpacity(.2))),
+                          contentPadding: EdgeInsets.fromLTRB(20, 40, 0, 0),
+                          filled: true,
+                          fillColor: AppColor.fromfillColor,
+                          border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(10)),
+                          hintText: AppText.hintNewPassword,
+                          hintStyle: GoogleFonts.manrope(
+                              color: Colors.white.withOpacity(.2)),
+                        ),
                       ),
                     ),
                     const SizedBox(
@@ -102,17 +114,18 @@ class ResetPassword extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(left: 16.0, right: 16),
                       child: TextField(
-                        textAlign: TextAlign.center,
-                        obscureText: true,
+                        style: TextStyle(color: Colors.white),
+                        obscureText: _isObscure1,
                         decoration: InputDecoration(
-                            contentPadding: EdgeInsets.fromLTRB(20, 40, 0, 0),
-                            filled: true,
-                            fillColor: AppColor.fromfillColor,
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(10)),
-                            labelText: AppText.hintConfirmPassword,
-                            labelStyle: GoogleFonts.manrope(
-                                color: Colors.white.withOpacity(.2))),
+                          contentPadding: EdgeInsets.fromLTRB(20, 40, 0, 0),
+                          filled: true,
+                          fillColor: AppColor.fromfillColor,
+                          border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(10)),
+                          hintText: AppText.hintConfirmPassword,
+                          hintStyle: GoogleFonts.manrope(
+                              color: Colors.white.withOpacity(.2)),
+                        ),
                       ),
                     ),
                     const SizedBox(

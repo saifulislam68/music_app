@@ -15,7 +15,12 @@ class AllAlbumScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColor.deepBlue,
       appBar: AppBar(
-        title: Text("Album"),
+        title: Text("Album",
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 24,
+              fontWeight: FontWeight.w600,
+            )),
         backgroundColor: AppColor.deepBlue,
       ),
       body: Column(

@@ -21,7 +21,11 @@ class VerificationScreen extends StatelessWidget {
               height: 20,
             ),
             Center(
-              child: Image.asset('assets/images/forget_img.png'),
+              child: Image.asset(
+                'assets/images/forget_img.png',
+                height: 168,
+                width: 139,
+              ),
             ),
             const SizedBox(
               height: 30,
@@ -83,16 +87,15 @@ class VerificationScreen extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(left: 16.0, right: 16),
                       child: TextField(
-                        textAlign: TextAlign.center,
-                        obscureText: true,
+                        style: TextStyle(color: Colors.white),
                         decoration: InputDecoration(
                             contentPadding: EdgeInsets.fromLTRB(20, 40, 0, 0),
                             filled: true,
                             fillColor: AppColor.fromfillColor,
                             border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10)),
-                            labelText: AppText.hintCode,
-                            labelStyle: GoogleFonts.manrope(
+                            hintText: AppText.hintCode,
+                            hintStyle: GoogleFonts.manrope(
                                 color: Colors.white.withOpacity(.2))),
                       ),
                     ),

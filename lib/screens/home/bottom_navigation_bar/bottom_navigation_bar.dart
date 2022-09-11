@@ -45,7 +45,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
             ),
           ],
           color: Colors.white,
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
               topRight: Radius.circular(30), topLeft: Radius.circular(30)),
         ),
         child: BottomNavigationBar(
@@ -56,7 +56,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
           selectedItemColor: Colors.white,
           showUnselectedLabels: true,
           unselectedItemColor: Colors.grey,
-          items: const <BottomNavigationBarItem>[
+          items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,
@@ -64,22 +64,22 @@ class _BottomNavBarState extends State<BottomNavBar> {
               label: 'Home',
             ),
             BottomNavigationBarItem(
-              icon: Icon(
-                Icons.sentiment_satisfied_alt_outlined,
-              ),
-              label: 'For You',
+              icon: Image.asset('assets/images/mood_vector.png'),
+              label: 'Mood',
             ),
             BottomNavigationBarItem(
-              icon: Icon(
-                Icons.face,
-              ),
+              icon: Image.asset('assets/images/star_vector.png'),
               label: 'profile',
             ),
             BottomNavigationBarItem(
-              icon: Icon(
-                Icons.category_outlined,
+              icon: Image.asset(
+                'assets/images/singer_vector.png',
               ),
-              label: 'Categories',
+              label: 'Singer',
+            ),
+            BottomNavigationBarItem(
+              icon: Image.asset('assets/images/album_vector.png'),
+              label: 'Album',
             ),
           ],
           currentIndex: _selectedIndex,

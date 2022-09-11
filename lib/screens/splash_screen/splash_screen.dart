@@ -1,4 +1,4 @@
-import 'package:dhak_dhol/screens/onboarding_screen/Onboarding_screen.dart';
+import 'package:dhak_dhol/screens/onboarding_screen/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {

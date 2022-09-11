@@ -21,7 +21,11 @@ class ForgetPasswordScreen extends StatelessWidget {
               height: 40,
             ),
             Center(
-              child: Image.asset('assets/images/forget_img.png'),
+              child: Image.asset(
+                'assets/images/forget_img.png',
+                height: 168,
+                width: 139,
+              ),
             ),
             const SizedBox(
               height: 20,
@@ -42,7 +46,7 @@ class ForgetPasswordScreen extends StatelessWidget {
                 AppText.forgetPageContent,
                 textAlign: TextAlign.center,
                 style: GoogleFonts.manrope(
-                    color: Colors.grey,
+                    color: Colors.white70,
                     fontSize: 16,
                     fontWeight: FontWeight.w600),
               ),
@@ -83,8 +87,7 @@ class ForgetPasswordScreen extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(left: 16.0, right: 16),
                       child: TextField(
-                        textAlign: TextAlign.center,
-                        obscureText: true,
+                        style: TextStyle(color: Colors.white),
                         decoration: InputDecoration(
                             contentPadding:
                                 const EdgeInsets.fromLTRB(20, 40, 0, 0),
@@ -92,8 +95,8 @@ class ForgetPasswordScreen extends StatelessWidget {
                             fillColor: AppColor.fromfillColor,
                             border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10)),
-                            labelText: AppText.hintEmail,
-                            labelStyle: GoogleFonts.manrope(
+                            hintText: AppText.hintEmail,
+                            hintStyle: GoogleFonts.manrope(
                                 color: Colors.white.withOpacity(.2))),
                       ),
                     ),

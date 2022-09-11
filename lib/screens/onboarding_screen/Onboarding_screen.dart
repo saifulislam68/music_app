@@ -1,8 +1,6 @@
-import 'package:dhak_dhol/screens/auth/sign_in/sign_in_screen.dart';
 import 'package:dhak_dhol/screens/auth/sign_up.dart/sign_up_screen.dart';
 import 'package:dhak_dhol/utils/app_const.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class OnboardingScreen extends StatelessWidget {
@@ -21,7 +19,12 @@ class OnboardingScreen extends StatelessWidget {
                   height: 50,
                 ),
                 Center(
-                  child: Image.asset('assets/images/onboarding.img.png'),
+                  child: Image.asset(
+                    'assets/images/onboarding.img.png',
+                    height: 400,
+                    width: 264,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ],
             ),
@@ -46,12 +49,12 @@ class OnboardingScreen extends StatelessWidget {
                         height: 50,
                       ),
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                        padding: const EdgeInsets.symmetric(horizontal: 53.0),
                         child: Text(
                           AppText.onboardingText,
                           textAlign: TextAlign.center,
-                          style: TextStyle(
-                              color: AppColor.grey, fontSize: 24, height: 1.2),
+                          style: const TextStyle(
+                              color: Colors.white, fontSize: 24, height: 1.2),
                         ),
                       ),
                       const SizedBox(

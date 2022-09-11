@@ -3,9 +3,15 @@ import 'package:dhak_dhol/utils/app_const.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class SignUpScreen extends StatelessWidget {
+class SignUpScreen extends StatefulWidget {
   const SignUpScreen({Key? key}) : super(key: key);
 
+  @override
+  State<SignUpScreen> createState() => _SignUpScreenState();
+}
+
+class _SignUpScreenState extends State<SignUpScreen> {
+  bool _isObscure = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,10 +23,14 @@ class SignUpScreen extends StatelessWidget {
               height: 80,
             ),
             Center(
-              child: Image.asset('assets/images/authpic.png'),
+              child: Image.asset(
+                'assets/images/authpic.png',
+                height: 169,
+                width: 230,
+              ),
             ),
             const SizedBox(
-              height: 30,
+              height: 50,
             ),
             Center(
               child: Container(
@@ -57,16 +67,15 @@ class SignUpScreen extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(left: 16.0, right: 16),
                       child: TextField(
-                        textAlign: TextAlign.center,
-                        obscureText: true,
+                        style: TextStyle(color: Colors.white),
                         decoration: InputDecoration(
-                            contentPadding: EdgeInsets.fromLTRB(20, 50, 0, 0),
+                            contentPadding: EdgeInsets.fromLTRB(20, 38, 0, 0),
                             filled: true,
                             fillColor: AppColor.fromfillColor,
                             border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10)),
-                            labelText: AppText.hintName,
-                            labelStyle: GoogleFonts.manrope(
+                            hintText: AppText.hintName,
+                            hintStyle: GoogleFonts.manrope(
                                 color: Colors.white.withOpacity(.2))),
                       ),
                     ),
@@ -90,16 +99,15 @@ class SignUpScreen extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(left: 16.0, right: 16),
                       child: TextField(
-                        textAlign: TextAlign.center,
-                        obscureText: true,
+                        style: TextStyle(color: Colors.white),
                         decoration: InputDecoration(
-                            contentPadding: EdgeInsets.fromLTRB(20, 50, 0, 0),
+                            contentPadding: EdgeInsets.fromLTRB(20, 40, 0, 0),
                             filled: true,
                             fillColor: AppColor.fromfillColor,
                             border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10)),
-                            labelText: AppText.hintEmail,
-                            labelStyle: GoogleFonts.manrope(
+                            hintText: AppText.hintEmail,
+                            hintStyle: GoogleFonts.manrope(
                                 color: Colors.white.withOpacity(.2))),
                       ),
                     ),
@@ -124,17 +132,26 @@ class SignUpScreen extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(left: 16.0, right: 16),
                       child: TextField(
-                        textAlign: TextAlign.center,
-                        obscureText: true,
+                        obscureText: _isObscure,
+                        style: TextStyle(color: Colors.white),
                         decoration: InputDecoration(
-                            contentPadding: EdgeInsets.fromLTRB(20, 50, 0, 0),
+                            contentPadding: EdgeInsets.fromLTRB(20, 40, 0, 0),
                             filled: true,
                             fillColor: AppColor.fromfillColor,
                             border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10)),
-                            labelText: AppText.hintPassword,
-                            labelStyle: GoogleFonts.manrope(
-                                color: Colors.white.withOpacity(.2))),
+                            hintText: AppText.hintPassword,
+                            hintStyle: GoogleFonts.manrope(
+                                color: Colors.white.withOpacity(.2)),
+                            suffixIcon: IconButton(
+                                icon: Icon(_isObscure
+                                    ? Icons.visibility
+                                    : Icons.visibility_off),
+                                onPressed: () {
+                                  setState(() {
+                                    _isObscure = !_isObscure;
+                                  });
+                                })),
                       ),
                     ),
                     const SizedBox(

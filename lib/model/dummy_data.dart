@@ -99,6 +99,28 @@ class DummyData {
       assetImage: 'assets/images/artists_woman.png',
     ),
     Music(
+      title: 'Embarrassing',
+      track: '50 Track',
+      assetImage: 'assets/images/artists_man.png',
+    ),
+    Music(
+      title: 'Live from paris ',
+      track: '16 Track',
+      assetImage: 'assets/images/artists_woman.png',
+    ),
+    Music(
+      title: 'Embarrassing',
+      track: '50 Track',
+      assetImage: 'assets/images/artists_man.png',
+    ),
+  ];
+  final List<Music> artists1 = [
+    Music(
+      title: 'Live from paris ',
+      track: '16 Track',
+      assetImage: 'assets/images/artists_woman.png',
+    ),
+    Music(
       title: 'Good and Evil ',
       track: "20 track",
       assetImage: 'assets/images/album_artist2.png',
